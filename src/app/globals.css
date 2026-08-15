@@ -1,0 +1,229 @@
+@import "tailwindcss";
+:root{
+  --bg:#07111f;
+  --surface:#0f172a;
+  --text:#ffffff;
+  --text2:#cbd5e1;
+  --border:#1e293b;
+  --primary:#2563eb;
+  --shadow:0 10px 30px rgba(0,0,0,.18);
+  --card-hover:#1e293b;
+  --header-bg:rgba(7,17,31,.92);
+}
+
+.light{
+  --bg:#f8fafc;
+  --surface:#ffffff;
+  --text:#0f172a;
+  --text2:#475569;
+  --border:#cbd5e1;
+  --primary:#2563eb;
+  --shadow:0 10px 30px rgba(0,0,0,.08);
+  --card-hover:#f1f5f9;
+  --header-bg:rgba(255,255,255,.92);
+}
+
+/* =========================================
+   GLOBAL RESET
+========================================= */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+  padding-top: 78px;
+  line-height: 1.6;
+}
+
+/* =========================================
+   TYPOGRAPHY
+========================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+p {
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+/* =========================================
+   LINKS
+========================================= */
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.3s ease;
+}
+
+/* =========================================
+   LISTS
+========================================= */
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* =========================================
+   IMAGES
+========================================= */
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+}
+
+/* =========================================
+   INPUTS
+========================================= */
+
+input,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+
+/* =========================================
+   MAIN
+========================================= */
+
+main {
+  min-height: calc(100vh - 78px);
+}
+
+/* =========================================
+   COMMON CONTAINER
+========================================= */
+
+.container{
+  max-width:1280px;
+  margin:0 auto;
+  padding:0 20px;
+}
+
+/* =========================================
+   SECTION HEADING
+========================================= */
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-heading h2 {
+  font-size: 42px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.section-heading p {
+  color: #94a3b8;
+  font-size: 18px;
+}
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2563eb;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1d4ed8;
+}
+
+/* =========================================
+   TEXT SELECTION
+========================================= */
+
+::selection {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 78px;
+  }
+
+  .section-heading h2 {
+    font-size: 32px;
+  }
+
+  .section-heading p {
+    font-size: 16px;
+  }
+}
+/* ===========================
+   PAGES
+=========================== */
+
+.page{
+padding:80px 0;
+min-height:70vh;
+}
+
+.page .container{
+max-width:900px;
+margin:auto;
+padding:0 20px;
+}
+
+.page h1{
+font-size:42px;
+margin-bottom:30px;
+}
+
+.page p{
+font-size:18px;
+line-height:1.9;
+color:#cbd5e1;
+margin-bottom:20px;
+}

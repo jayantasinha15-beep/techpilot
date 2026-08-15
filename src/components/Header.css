@@ -1,0 +1,251 @@
+.header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+
+  background:color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter:blur(14px);
+
+  border-bottom:1px solid var(--border);
+}
+
+.navbar{
+
+  max-width:1400px;
+
+  height:78px;
+
+  margin:auto;
+
+  padding:0 40px;
+
+  display:flex;
+
+  align-items:center;
+
+}
+
+.logo{
+
+  flex-shrink:0;
+
+}
+
+.logo img{
+
+  width:300px;
+
+  height:auto;
+
+}
+
+.nav-links{
+
+  display:flex;
+
+  gap:34px;
+
+  margin-left:70px;
+
+}
+
+.nav-links a{
+
+  color:var(--text);
+
+  text-decoration:none;
+
+  font-size:16px;
+
+  font-weight:600;
+
+  white-space:nowrap;
+
+  transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+  color:#3b82f6;
+
+}
+
+.search-btn{
+
+  margin-left:auto;
+
+  color:var(--text);
+
+  text-decoration:none;
+
+  padding:12px 22px;
+
+  border-radius:40px;
+
+  border:1px solid #2563eb;
+
+  transition:.3s;
+
+}
+
+.search-btn:hover{
+
+  background:#2563eb;
+
+}
+
+.menu-btn{
+
+  display:none;
+
+  background:none;
+
+  border:none;
+
+  color:var(--text);
+
+  font-size:30px;
+
+  margin-left:auto;
+
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.logo img{
+
+width:200px;
+
+}
+
+.menu-btn{
+
+display:block;
+
+}
+
+.search-btn{
+
+display:none;
+
+}
+
+.nav-links{
+
+display:none;
+
+position:absolute;
+
+top:78px;
+
+left:0;
+
+width:100%;
+
+background:#020617;
+
+padding:30px;
+
+flex-direction:column;
+
+gap:24px;
+
+margin-left:0;
+
+}
+
+.nav-links.active{
+
+display:flex;
+
+}
+
+}
+.header{
+
+transition:.35s ease;
+
+}
+
+.header.scrolled{
+
+padding:2px 24px;
+
+background:var(--header-bg);
+
+backdrop-filter:blur(18px);
+
+box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
+
+.header.scrolled .logo img{
+
+width:330px;
+
+transition:.35s;
+
+}
+.theme-toggle{
+  margin-left:16px;
+
+  width:46px;
+  height:46px;
+
+  border:none;
+  border-radius:50%;
+
+  cursor:pointer;
+
+  background:#2563eb;
+  color:#fff;
+
+  font-size:20px;
+
+  transition:.3s;
+}
+
+.theme-toggle:hover{
+  transform:rotate(180deg) scale(1.08);
+}
+.theme-toggle{
+  margin-left:16px;
+
+  width:44px;
+  height:44px;
+
+  border:none;
+  border-radius:50%;
+
+  background:var(--primary);
+
+  color:var(--text);
+
+  font-size:20px;
+
+  cursor:pointer;
+
+  transition:.3s;
+}
+
+.theme-toggle:hover{
+
+transform:rotate(180deg);
+
+}
+.logo-light{
+  display:none;
+}
+
+html.light .logo-dark{
+  display:none;
+}
+
+html.light .logo-light{
+  display:block;
+}

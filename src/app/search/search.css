@@ -1,0 +1,28 @@
+.search-page{
+  padding:80px 0;
+}
+
+.search-page h1{
+  text-align:center;
+  font-size:42px;
+  margin-bottom:35px;
+}
+
+.search-box{
+  width:100%;
+  max-width:650px;
+  display:block;
+  margin:0 auto 50px;
+  padding:18px 20px;
+  background:#0f172a;
+  border:1px solid #1e293b;
+  border-radius:12px;
+  color:white;
+  font-size:17px;
+}
+
+.search-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:30px;
+}

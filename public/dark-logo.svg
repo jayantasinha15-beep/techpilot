@@ -1,0 +1,7 @@
+<Image
+  src="/logo-dark.svg"
+  alt="TechPilot"
+  width={300}
+  height={70}
+  priority
+/>

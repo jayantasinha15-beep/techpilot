@@ -1,0 +1,90 @@
+.notfound{
+min-height:calc(100vh - 70px);
+display:flex;
+justify-content:center;
+align-items:center;
+padding:120px 20px 60px;
+background:#07111f;
+}
+.notfound-box{
+max-width:700px;
+text-align:center;
+margin-top:60px;
+}
+
+.notfound h1{
+font-size:130px;
+font-weight:700;
+color:#2563eb;
+line-height:1;
+margin-bottom:20px;
+}
+
+.notfound h2{
+font-size:42px;
+margin-bottom:20px;
+color:white;
+}
+
+.notfound p{
+font-size:18px;
+color:#94a3b8;
+margin-bottom:40px;
+line-height:1.8;
+}
+
+.notfound-buttons{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.home-btn,
+.search-btn{
+padding:16px 32px;
+border-radius:50px;
+font-weight:600;
+transition:.3s;
+}
+
+.home-btn{
+background:#2563eb;
+color:white;
+}
+
+.home-btn:hover{
+background:#1d4ed8;
+transform:translateY(-3px);
+}
+
+.search-btn{
+border:2px solid #2563eb;
+color:white;
+}
+
+.search-btn:hover{
+background:#2563eb;
+transform:translateY(-3px);
+}
+
+@media(max-width:768px){
+
+.notfound h1{
+font-size:90px;
+}
+
+.notfound h2{
+font-size:30px;
+}
+
+.notfound p{
+font-size:16px;
+}
+
+.home-btn,
+.search-btn{
+width:100%;
+}
+
+}
