@@ -114,10 +114,10 @@ export default function Comments({
               <h4>{c.name}</h4>
 
               <span>
-                {new Date(
-                  c.created_at
-                ).toLocaleDateString()}
-              </span>
+  {c.created_at
+    ? new Date(c.created_at).toLocaleDateString("en-IN")
+    : "Date unavailable"}
+</span>
 
             </div>
 
